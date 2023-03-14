@@ -1,0 +1,18 @@
+html {   
+    min-width: 320px;   
+    max-width: 1400px; 
+}
+
+.body{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.CONTAINER{
+    height: 100%;
+    padding: 1rem 1%;
+}
+

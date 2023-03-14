@@ -1,0 +1,100 @@
+.header{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #D8ADEE;
+    padding: 0.5rem 1%;
+}
+
+.header__logoNombre{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo{
+    width: 70px;
+}
+
+.header__nombre--link{
+    text-decoration: none;
+}
+
+.header__nombre{
+    color: white;
+    font-family: 'Lilita One';
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header__busqueda{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.header__buscar{
+    background: white;
+    border-radius: 8px 0 0 8px;
+    border: 0.1rem solid white;
+    padding: 0.5rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #F1D4FF;
+    width: 85%;
+}
+
+.header__buscar::placeholder{
+    color: #D8ADEE;
+}
+
+.header__buscar:focus{
+    outline: none;
+    color: #F1D4FF;
+}
+
+.header__lupa{
+    background: #F1D4FF;
+    padding: 0.5rem;
+    border-radius: 0 8px 8px 0;
+    border: 0.1rem solid #F1D4FF;
+    width: 5%;
+}
+
+.header__lupa:hover{
+    background: #8D65A1;
+}
+
+.header__navegacion{
+    display: flex;
+    gap: 2rem;
+}
+
+.header__link{
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.header__link:hover{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.header__boton{
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    color: #8D65A1;
+    font-weight: 600;
+    padding: 0.5rem;
+    border: 0.1rem solid white;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+
+.header__boton:hover{
+    border: none;
+}
