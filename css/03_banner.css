@@ -2,6 +2,7 @@
     background: url(../image/banner_perro.jpg) center/cover no-repeat;
     width: auto;
     height: 40vh;
+    margin-top: 40px;
 }
 
 .banner__imagenes{
@@ -34,8 +35,30 @@
     font-weight: 400;
     text-align: center;
     color: white;
-    width: 40%;
+    width: 100px;
     height: 10%;
     padding: 0.8rem 0.4rem 0.4rem 0.2rem;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    .banner{
+        height: 60vh;
+        margin-top: 55px;
+    }
+    .banner__titulo{
+        font-size: 2.8rem;
+    }
+    .banner__subtitulo{
+        font-size: 1.3rem;
+    }
+    .banner__boton{
+        padding: 1.3rem 0.4rem 0.4rem 0.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .banner{
+        height: 70vh;
+    }
 }

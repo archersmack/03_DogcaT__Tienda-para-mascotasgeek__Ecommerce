@@ -1,7 +1,13 @@
+.categorias{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
 .categorias__categoriaIndividual{
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+
 }
 
 .categorias__titulo{
@@ -23,6 +29,7 @@
 .categorias__tarjetas{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
     row-gap: 1.2rem;
 }
@@ -52,4 +59,21 @@
 .categorias__precio{
     color: #8D65A1;
     font-weight: 600;
+}
+
+@media screen and (min-width: 768px){
+    .categorias{
+        gap: 4.5rem;
+        padding: 2rem 0.8rem;
+    }
+    .categorias__tarjetas{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .categorias{
+        gap: 4.5rem;
+        padding: 2.5rem 5rem;
+    }
 }
