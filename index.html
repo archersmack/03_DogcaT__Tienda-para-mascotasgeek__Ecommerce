@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/00_reset.css">
         <link rel="stylesheet" href="css/01_base.css">
         <link rel="stylesheet" href="css/02_header.css">
+        <link rel="stylesheet" href="css/03_banner.css">
+        <link rel="stylesheet" href="css/04_categorias.css">
 
         <!-- FUENTES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,21 +31,186 @@
             </div>
             <div class="header__busqueda">
                 <input type="text" class="header__buscar" placeholder="Qué te recetó el Dogtor?">
-                <!--<img src="" alt="Imagen de una lupa" class="header__lupa">-->
                <div class="header__lupa">
                     <span style="font-size: 1.3rem;color: white;text-align: right;">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
                 </div>
             </div>
-            <div class="header__navegacion">
+            <nav class="header__navegacion" id="head__navegacion--id">
                 <a href="#" class="header__link">Para perros</a>
                 <a href="#" class="header__link">Para gatos</a>
-            </div>
+            </nav>
             <button class="header__boton">Sesión del Veterinario</button>
+            <button class="head__buttonNav">
+                <span style="font-size: 1.8rem;color: white;text-align: right;">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
         </header>
-
+        <section class="banner CONTAINER">
+            <div class="banner__imagenes">
+                <h1 class="banner__titulo">Accesorios en Promoción</h1>
+                <h2 class="banner__subtitulo">Productos seleccionados con 33% de descuento</h2>
+                <a href="#" class="banner__boton">Ver Accesorios</a>
+            </div>
+        </section>
+        <section class="categorias CONTAINER">
+            <div class="categorias__categoriaIndividual">
+                <div class="categorias__titulo">
+                    <h1 class="categorias__nombre">Alimentos</h1>
+                    <h2 class="categorias__verTodo">Ver todo...</h2>
+                </div>
+                <div class="categorias__tarjetas">
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="categorias__categoriaIndividual">
+                <div class="categorias__titulo">
+                    <h1 class="categorias__nombre">Accesorios</h1>
+                    <h2 class="categorias__verTodo">Ver todo...</h2>
+                </div>
+                <div class="categorias__tarjetas">
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--accesorios">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--accesorios">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--accesorios">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--accesorios">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="categorias__categoriaIndividual">
+                <div class="categorias__titulo">
+                    <h1 class="categorias__nombre">Medicamentos</h1>
+                    <h2 class="categorias__verTodo">Ver todo...</h2>
+                </div>
+                <div class="categorias__tarjetas">
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--medicamentos">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--medicamentos">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--medicamentos">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--medicamentos">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="categorias__categoriaIndividual">
+                <div class="categorias__titulo">
+                    <h1 class="categorias__nombre">Aseo</h1>
+                    <h2 class="categorias__verTodo">Ver todo...</h2>
+                </div>
+                <div class="categorias__tarjetas">
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--aseo">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--aseo">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--aseo">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                    <div class="categorias__tarjeta">
+                        <img src="" alt="" class="categorias__imagen categorias__imagen--aseo">
+                        <p class="categorias__producto">Producto</p>
+                        <p class="categorias__precio">$10.000</p>
+                        <a href="" class="categorias__verProducto">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </body>
+
+    <script>
+        /* /////////////////// FUNCIONES ////////////// */
+        function activarDesactivarMenuNavegacion() {
+                if (estadoNavegacion == "none"){
+                    document.getElementById("head__navegacion--id").style.display = "flex";
+                    document.getElementById("head__ID").style.height = "255px";
+                    estadoNavegacion = "flex";
+                }
+                else{
+                    document.getElementById("head__navegacion--id").style.display = "none";
+                    document.getElementById("head__ID").style.height = "70px";
+                    estadoNavegacion = "none";
+                }
+        }
+
+        /* /////////////////// CUERPO DEL ALGORITMO ////////////////// */
+
+        var botonNavegacion = document.querySelector(".head__buttonNav");
+        var opcionesNavegacion = document.querySelector(".head__navegacion");
+        var estadoNavegacion = document.getElementById("head__navegacion--id").style.display;
+
+        botonNavegacion.onclick = activarDesactivarMenuNavegacion;
+
+    </script>
 
 </html>

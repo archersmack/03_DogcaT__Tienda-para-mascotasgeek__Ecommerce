@@ -1,0 +1,55 @@
+.categorias__categoriaIndividual{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.categorias__titulo{
+    display: flex;
+    justify-content: space-between;
+    color: #8d65a1; 
+    margin-bottom: 0.5rem;
+}
+
+.categorias__nombre{
+    font-family: 'Lilita One';
+    font-size: 1.3rem;
+}
+
+.categorias__verTodo{
+    align-self: end;
+}
+
+.categorias__tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    row-gap: 1.2rem;
+}
+
+.categorias__imagen{
+    background: #f1d4ffc1;
+    width: 135px;
+    height: 135px;
+}
+.categorias__imagen--alimentos{
+    background: #F1D4FF;
+}
+.categorias__imagen--accesorios{
+    background: #6da187a1;
+}
+.categorias__imagen--medicamentos{
+    background: #DFEDAD8a;
+}
+.categorias__imagen--aseo{
+    background: #8d65a150;
+}
+
+.categorias__producto{
+    color: #D8ADEE;
+}
+
+.categorias__precio{
+    color: #8D65A1;
+    font-weight: 600;
+}
