@@ -5,14 +5,22 @@
     align-items: center;
     background: #D8ADEE;
     padding: 0.5rem 1%;
+    gap: 1rem;
+    /*position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;*/
 }
 
 .header__logoNombre{
     display: flex;
     align-items: center;
+    order: 0;
+    flex-grow: 1;
 }
 
 .header__logo{
+    display: none;
     width: 70px;
 }
 
@@ -23,18 +31,20 @@
 .header__nombre{
     color: white;
     font-family: 'Lilita One';
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    text-decoration: none;
+    padding-left: 6px;
 }
 
 .header__busqueda{
     display: flex;
     justify-content: center;
-    width: 30%;
+    height: 95%;
+    order: 2;
 }
 
 .header__buscar{
+    display: none;
     background: white;
     border-radius: 8px 0 0 8px;
     border: 0.1rem solid white;
@@ -55,10 +65,10 @@
 
 .header__lupa{
     background: #F1D4FF;
-    padding: 0.5rem;
-    border-radius: 0 8px 8px 0;
+    padding: 0.4rem;
+    border-radius: 8px 8px;
     border: 0.1rem solid #F1D4FF;
-    width: 5%;
+    width: 20px;
 }
 
 .header__lupa:hover{
@@ -66,12 +76,17 @@
 }
 
 .header__navegacion{
-    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 95%;
     gap: 2rem;
 }
 
 .header__link{
     text-decoration: none;
+    text-align: center;
     font-family: 'Roboto Mono';
     color: white;
     font-weight: 400;
@@ -85,16 +100,74 @@
 }
 
 .header__boton{
+    height: 95%;
     background: white;
     font-family: 'Montserrat', sans-serif;
     color: #8D65A1;
-    font-weight: 600;
-    padding: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
     border: 0.1rem solid white;
     border-radius: 8px;
-    transition: 0.1s;
+    transition: 0.4s;
+    order: 1;    
 }
 
 .header__boton:hover{
+    box-shadow: 2px 2px 4px -1px #8D65A1;
+}
+
+.head__buttonNav{
+    display: block;
+    background: none;
     border: none;
+    order: 3;
+}
+
+@media screen and (min-width: 480px){
+    .header__logo{
+        display: block;
+    }
+    .header__nombre{
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header__nombre{
+        font-size: 2.5rem;
+    }
+    .header__busqueda{
+       width: 35%;
+    }
+    .header__buscar{
+        display: block;
+    }
+    .header__lupa{
+        border-radius: 0 8px 8px 0;
+    }
+    .header__lupa{
+        padding: 0.3rem;
+        /*width: 7%;*/
+    }
+}
+
+@media screen and (min-width: 1024px){  
+    .header__logoNombre{
+        flex-grow: 0;
+    }
+    .header__navegacion{
+        display: flex;
+    }
+    .header__boton{
+        width: 15%;
+        font-size: 0.82rem;
+        font-weight: 600;
+    }
+    .header__boton:hover{
+        width: 14.5%;
+        cursor: pointer;
+    }
+    .head__buttonNav{
+        display: none;
+    }
 }
