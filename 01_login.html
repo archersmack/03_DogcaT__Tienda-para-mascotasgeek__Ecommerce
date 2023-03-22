@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang ="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale-1.0">
+        <title> DogcaT || Tienda para Mascotas </title>
+        <!-- ENLACES -->
+        <link rel="stylesheet" href="css/00_reset.css">
+        <link rel="stylesheet" href="css/01_base.css">
+        <link rel="stylesheet" href="css/02_header.css">
+        <link rel="stylesheet" href="css/05_sobreNosotros.css">
+        <link rel="stylesheet" href="css/06_footer.css">
+        <link rel="stylesheet" href="css/07_inicioSesion.css">
+        <!-- FUENTES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lilita+One&family=Montserrat:wght@200;400;600&family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+        <!-- LIBRERIAS -->
+        <script src="https://kit.fontawesome.com/e17ca27ab0.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header class="header CONTAINER">
+            <div class="header__logoNombre">
+                <img src="image/dogFace.png"Imagen Logo de la tienda de mascotas" class="header__logo">
+                <a href="index.html" class="header__nombre--link">
+                    <h1 class="header__nombre">DogcaT</h1>
+                </a>
+            </div>
+            <div class="header__busqueda">
+                <input type="text" class="header__buscar" placeholder="Qué te recetó el Dogtor?">
+               <div class="header__lupa">
+                    <span style="font-size: 1.3rem;color: white;text-align: right;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+            </div>
+            <nav class="header__navegacion" id="head__navegacion--id">
+                <a href="#" class="header__link">Para perros</a>
+                <a href="#" class="header__link">Para gatos</a>
+            </nav>
+            <a href="01_login.html" class="header__botonSesion">Sesión del Veterinario</a>
+            <button class="head__buttonNav">
+                <span style="font-size: 1.8rem;color: white;text-align: right;">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+        </header>
+        <main>
+            <section class="inicioSesion CONTAINER">
+                <div class="inicioSesion__validacionUsuario">
+                    <h1 class="inicioSesion__titulo">Inicia tu sesión</h1>
+                    <form action="" class="inicioSesion__formulario">
+                        <input type="text" class="inicioSesion__input" placeholder="Escriba su correo electrónico">
+                        <input type="text" class="inicioSesion__input" placeholder="Escriba su contraseña">
+                        <button class="inicioSesion__boton">Entrar</button>
+                    </form>
+                </div>
+            </section>
+            <section class="sobreNosotros CONTAINER">
+                <div class="sobreNosotros__info">
+                    <div class="sobreNosotros__logo">
+                        <img src="image/dogFace.png"Imagen Logo de la tienda de mascotas" class="sobreNosotros__imagen">
+                        <a href="#" class="sobreNosotros__enlace">
+                            <h1 class="sobreNosotros__nombre">DogcaT</h1>
+                        </a>
+                    </div>
+                    <ul class="sobreNosotros__lista">
+                        <a href="" class="sobreNosotros__enlace">
+                            <li class="sobreNosotros__item">Quienes somos</li>
+                        </a>
+                        <a href="" class="sobreNosotros__enlace">
+                            <li class="sobreNosotros__item">Politica de privacidad</li>
+                        </a>
+                        <a href="" class="sobreNosotros__enlace">
+                            <li class="sobreNosotros__item">Programa de fidelidad</li>
+                        </a>
+                        <a href="" class="sobreNosotros__enlace">
+                            <li class="sobreNosotros__item">Nuestras tiendas</li>
+                        </a>
+                        <a href="" class="sobreNosotros__enlace">
+                            <li class="sobreNosotros__item">Quiero ser franquiciado</li>
+                        </a>
+                        <a href="" class="sobreNosotros__enlace">
+                            <li class="sobreNosotros__item">Anuncie aquí</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="sobreNosotros__contacto">
+                    <h1 class="sobreNosotros__contacto__titulo">Hable con nosotros</h1>
+                    <form action="" class="sobreNosotros__contacto__formulario">
+                        <label for="" class="sobreNosotros__contacto__label">Tu nombre</label>
+                        <input type="text" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto">
+                        
+                        <label for="" class="sobreNosotros__contacto__label">Tu correo</label>
+                        <input type="email" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto"><label for="" class="sobreNosotros__contacto__label">
+
+                        <label for="" class="sobreNosotros__contacto__label"></label>
+                        <textarea name="" id="" cols="30" rows="5" class="sobreNosotros__contacto__input" placeholder="Escribre tu mensaje" required spellcheck="true"></textarea>
+                        
+                        <button class="sobreNosotros__contacto__button">Enviar mensaje</button>
+                    </form>
+                </div>                                                                                                          
+            </section>
+        </main>
+
+        <footer class="footer CONTAINER">
+            <p class="footer__elaboradoPor">Desarrollado por G_D Hernández</p>
+            <p class="footer__elaboradoPor">Todos los derechos reservados</p>
+            <p class="footer__elaboradoPor">2023</p>
+        </footer>
+    </body>
+</html>

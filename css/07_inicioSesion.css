@@ -1,0 +1,76 @@
+.inicioSesion{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    background: #8D65A1;
+    margin-top: 40px;
+}
+
+.inicioSesion__validacionUsuario{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    margin: 13% auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicioSesion__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.9rem;
+}
+
+.inicioSesion__formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 84%;
+    gap: 1.2rem;
+}
+
+.inicioSesion__input{
+    width: 240px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+    border: none;
+    color: #D8ADEE;
+}
+
+.inicioSesion__input:focus{
+    color:#D8ADEE;
+    outline: none;
+}
+
+.inicioSesion__input::placeholder{
+    color:#D8ADEE;
+}
+
+.inicioSesion__boton{
+    width: 100px;
+    background: #D8ADEE;
+    border: none;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color:#8D65A1;
+    align-self: center;
+}
+
+@media screen and (min-width: 1024px){
+    .inicioSesion__titulo{
+        margin-bottom: 1.9rem;
+    }
+    .inicioSesion__input{
+        width: 430px;
+        padding: 0.25rem 0.5rem;
+    }
+    .inicioSesion__boton{
+        width: 430px;
+        padding: 0 14rem;
+    }
+
+}
