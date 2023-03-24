@@ -1,6 +1,11 @@
 # DogcaT 🐶 Tienda de mascotas 🐱
 
-E-commerce creado para una tienda Online que ofrece productos para perros y gatos (Alimentos, medicamentos, accesosrios, productos de aseo).
+Hola, mi nombre es Germán Hernández y estoy creando un E-commerce para una tienda Online que ofrece productos para perros y gatos (Alimentos, medicamentos, accesosrios, productos de aseo).
+
+Mi hermana es veterinaria y esta muy emocionada por el trabajo que estoy adelantando, pues en un futuro cercano le va a permitir ampliar su posibilidad de ingreso y prestar otros servicios.
+
+Actualmente, estoy formándome como Desarrollador. Con Oracle ONE y Alura LATAM estoy descubriendo el mundo del Desarrollo WEB.
+
 
 
 >#### [Visita nuestra Web Site --> 🧐  Próximamente podrás hacer tus pedidos.](https://archersmack.github.io/03_DogcaT__Tienda-para-mascotasgeek__Ecommerce/ "Heading link") 
@@ -65,6 +70,8 @@ Me apoyé de las siguientes librerias:
 
 **Siempre estoy dispuesto a mejorar, asi que recibo todos los Feedbacks o calaboraciones para aprender.**
 ###### Nunca dejemos de aprender.
+
+### Deseas contactarme, descubre mi [Portafolio Personal](https://archersmack.github.io/02_Portafolio/) :point_left:
 
 ------------
 
