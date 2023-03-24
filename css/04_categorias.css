@@ -50,6 +50,8 @@
 }
 
 .categorias__verTodo{
+    color: #d8adee;
+    text-decoration: none;
     align-self: end;
 }
 
@@ -73,6 +75,7 @@
 }
 .categorias__tarjeta:hover{
     opacity: 0.5;
+    transform: scale(1.075);
 }
 
 
@@ -159,7 +162,7 @@
         display: block;
     }
     .categorias__imagen{
-        width: 135px;
+        width: 122px;
     }
 }
 
@@ -171,6 +174,6 @@
         padding: 2.5rem 6rem;
     }
     .categorias__imagen{
-        width: 158px;
+        width: 145px;
     }
 }
