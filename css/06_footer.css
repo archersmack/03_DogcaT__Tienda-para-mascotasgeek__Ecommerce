@@ -1,8 +1,62 @@
 .footer{
     background: #D8ADEE;
-    font-family: 'Montserrat', sans-serif;
     font-size: 0.6rem;
     font-weight: 600;
     color: #8D65A1;
     text-align: center;
 }
+
+.footer__descripcion{
+    font-family: 'GFS Didot', serif;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.footer__barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+
+.footer__enlaces{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    margin: 1.5rem 0;
+}
+
+.footer__enlace{
+    transition: 0.2s;
+}
+
+.footer__enlace:hover{
+    opacity: 0.5;
+    font-size: 2.5rem;
+}
+
+.footer__elaboradoPor{
+    text-align: center;
+    font-family: 'Roboto Mono';
+}
+
+.footer__enlacePortafolio{
+    width: 210px;
+    background: #8D65A1;
+    color: #f1d4ff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px){
+    .footer{
+        padding: 2rem 0;
+    }
+    .footer__enlaces{
+        gap: 4rem;
+    }
+}
+

@@ -56,6 +56,7 @@
 .categorias__tarjeta{
     border-radius: 10px;
     padding: 0.1rem;
+    transition: 0.3s;
 }
 
 .categorias__tarjeta--alimentos{
@@ -69,6 +70,9 @@
 }
 .categorias__tarjeta--aseo{
     background: #8d65a150;
+}
+.categorias__tarjeta:hover{
+    opacity: 0.5;
 }
 
 
@@ -85,22 +89,23 @@
 }
 
 .categorias__imagen{
-    background: #f1d4ffc1;
+    background: #fff;
     width: 140px;
     height: 174px;
+    padding: 0.3rem;
     border-radius: 10px 10px 0 0;
 }
 .categorias__imagen--alimentos{
-    background: #F1D4FF;
+    background: #fff /*#F1D4FF*/;
 }
 .categorias__imagen--accesorios{
-    background: #6da187a1;
+    background: #fff /*#6da187a1*/;
 }
 .categorias__imagen--medicamentos{
-    background: #DFEDAD8a;
+    background: #fff /*#DFEDAD8a*/;
 }
 .categorias__imagen--aseo{
-    background: #8d65a150;
+    background: #fff /*#8d65a150*/;
 }
 
 .categorias__producto{
