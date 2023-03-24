@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale-1.0">
-        <title> DogcaT || Login Administrador </title>
+        <title> DogcaT || Zona Administrador  </title>
         <!-- ENLACES -->
         <link rel="stylesheet" href="css/00_reset.css">
         <link rel="stylesheet" href="css/01_base.css">
@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/05_sobreNosotros.css">
         <link rel="stylesheet" href="css/06_footer.css">
         <link rel="stylesheet" href="css/07_inicioSesion.css">
+        <link rel="stylesheet" href="css/08_agregarProducto.css">
         <!-- FUENTES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +41,7 @@
                 <a href="#" class="header__link">Para perros</a>
                 <a href="#" class="header__link">Para gatos</a>
             </nav>
+            <a href="#" class="header__botonSesion">Menú del Administrador</a>
             <button class="head__buttonNav">
                 <span style="font-size: 1.8rem;color: white;text-align: right;">
                     <i class="fa-solid fa-bars"></i>
@@ -47,13 +49,31 @@
             </button>
         </header>
         <main>
-            <section class="inicioSesion CONTAINER">
-                <div class="inicioSesion__validacionUsuario">
-                    <h1 class="inicioSesion__titulo">Inicia tu sesión</h1>
-                    <form action="" class="inicioSesion__formulario">
-                        <input type="text" class="inicioSesion__input" placeholder="Escriba su correo electrónico">
-                        <input type="text" class="inicioSesion__input" placeholder="Escriba su contraseña">
-                        <a href="03_menuAdministrador.html" class="inicioSesion__boton boton">Entrar</a>
+            <section class="agregarProducto CONTAINER">
+                <div class="agregarProducto__nuevoProducto">
+                    <h1 class="agregarProducto__titulo">Agregar nuevo producto</h1>
+                    <form action="" class="agregarProducto__formulario">
+                        <div class="agregarProducto__campoIndividual">
+                            <label for="" class="agregarProducto__label">URL de la imagen</label>
+                            <input type="text" class="agregarProducto__input">
+                        </div>                        
+                        <div class="agregarProducto__campoIndividual">
+                            <label for="" class="agregarProducto__label">Categoría</label>
+                            <input type="text" class="agregarProducto__input">
+                        </div>                        
+                        <div class="agregarProducto__campoIndividual">
+                            <label for="" class="agregarProducto__label">Nombre del producto</label>
+                            <input type="text" class="agregarProducto__input">
+                        </div>                        
+                        <div class="agregarProducto__campoIndividual">
+                            <label for="" class="agregarProducto__label">Precio del producto</label>
+                            <input type="text" class="agregarProducto__input">
+                        </div>
+                        <div class="agregarProducto__campoIndividual">
+                            <label for="" class="agregarProducto__label">Descripción del producto</label>
+                            <input type="text" class="agregarProducto__input agregarProducto__input--descripcion">
+                        </div>
+                        <button class="agregarProducto__boton boton">Agregar producto</button>
                     </form>
                 </div>
             </section>

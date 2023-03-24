@@ -5,6 +5,10 @@
     margin-top: 40px;
 }
 
+.banner--sinContenido{
+    margin-top: 40px;
+}
+
 .banner__imagenes{
     display: flex;
     flex-direction: column;
@@ -36,7 +40,7 @@
     text-align: center;
     color: white;
     width: 100px;
-    height: 10%;
+    height: 20px;
     padding: 0.8rem 0.4rem 0.4rem 0.2rem;
     text-decoration: none;
 }
@@ -51,9 +55,6 @@
     }
     .banner__subtitulo{
         font-size: 1.3rem;
-    }
-    .banner__boton{
-        padding: 1.3rem 0.4rem 0.4rem 0.2rem;
     }
 }
 

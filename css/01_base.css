@@ -16,3 +16,13 @@ html {
     padding: 1rem 0.8rem;
 }
 
+.boton{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}

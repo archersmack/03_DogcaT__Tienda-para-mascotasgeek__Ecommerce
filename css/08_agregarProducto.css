@@ -1,0 +1,80 @@
+.agregarProducto{
+    height: 100%;
+    background: #F1D4FF;
+    margin-top: 40px;
+}
+
+.agregarProducto__nuevoProducto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.agregarProducto__titulo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #788743;
+}
+
+.agregarProducto__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.agregarProducto__campoIndividual{
+    display: flex;
+    flex-direction: column;
+    background: #dfedad;
+    padding: 0.3rem;
+}
+
+.agregarProducto__label{
+    background: #DFEDAD;
+    color: #90A155;
+    font-size: 0.7rem;
+}
+
+.agregarProducto__input{
+    background: #DFEDAD;
+    padding-top: 0.3rem;
+    border: none;
+    color: #8d65a1;
+    font-size: 0.9rem;
+}
+
+.agregarProducto__input:focus{
+    outline: none;
+    color: #8d65a1;
+}
+
+.agregarProducto__input--descripcion{
+    height: 40px;
+}
+
+.agregarProducto__boton{
+    width: 100%;
+    background: #90a155;
+    color: #dfedad;
+}
+
+@media screen and (min-width: 768px){
+    .agregarProducto__nuevoProducto{
+        padding: 0.7rem 1rem;
+    }    
+}
+
+@media screen and (min-width: 1024px){
+    .agregarProducto{
+        display: flex;
+        justify-content: center;
+    }
+    .agregarProducto__nuevoProducto{
+        width: 450px;
+    }
+    .agregarProducto__titulo{
+        font-size: 1.4rem;
+    }
+}

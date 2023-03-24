@@ -50,14 +50,9 @@
 }
 
 .inicioSesion__boton{
-    width: 100px;
     background: #D8ADEE;
-    border: none;
-    height: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    text-decoration: none;
     color:#8D65A1;
-    align-self: center;
 }
 
 @media screen and (min-width: 1024px){
@@ -69,8 +64,6 @@
         padding: 0.25rem 0.5rem;
     }
     .inicioSesion__boton{
-        width: 430px;
-        padding: 0 14rem;
+        width: 450px;
     }
-
 }

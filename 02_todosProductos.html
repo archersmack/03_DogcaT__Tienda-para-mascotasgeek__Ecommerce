@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale-1.0">
-        <title> DogcaT || Tienda para Mascotas </title>
+        <title> DogcaT || Todos los productos </title>
         <!-- ENLACES -->
         <link rel="stylesheet" href="css/00_reset.css">
         <link rel="stylesheet" href="css/01_base.css">
@@ -25,7 +25,7 @@
         <header class="header CONTAINER">
             <div class="header__logoNombre">
                 <img src="image/dogFace.png"Imagen Logo de la tienda de mascotas" class="header__logo">
-                <a href="#" class="header__nombre--link">
+                <a href="index.html" class="header__nombre--link">
                     <h1 class="header__nombre">DogcaT</h1>
                 </a>
             </div>
@@ -49,20 +49,25 @@
             </button>
         </header>
         <main>
-            <section class="banner CONTAINER">
-                <div class="banner__imagenes">
+            <!--<section class="banner CONTAINER">--> <section class="banner--sinContenido CONTAINER">
+                <!--Eliminado el contenido para esta página, solo se conserva en el index
+                    <div class="banner__imagenes">
                     <h1 class="banner__titulo">Accesorios en Promoción</h1>
                     <h2 class="banner__subtitulo">Productos seleccionados con 33% de descuento</h2>
                     <a href="#" class="banner__boton">Ver Accesorios</a>
-                </div>
+                </div>-->
             </section>
 
-            <section class="categorias CONTAINER">
+            <!--<section class="categorias CONTAINER">--><section class="categorias--todosLosProductos CONTAINER">
+                <div class="categorias__todosLosProductos">
+                    <h1 class="categorias__tituloTodosLosProductos">Todos los productos</h1>
+                    <a href="01_login.html" class="categorias__btnAgregarProducto boton">Agregar producto <i class="fa-solid fa-circle-plus fa-fade"> </i></a>
+                </div>
                 <div class="categorias__categoriaIndividual">
-                    <div class="categorias__titulo">
+                    <!--<div class="categorias__titulo">
                         <h1 class="categorias__nombre">Alimentos</h1>
-                        <a href="02_todosProductos.html"><h2 class="categorias__verTodo">Ver todo...</h2></a>
-                    </div>
+                        <h2 class="categorias__verTodo">Ver todo...</h2>
+                    </div>-->
                     <div class="categorias__tarjetas">
                         <div class="categorias__tarjeta">
                             <img src="" alt="" class="categorias__imagen">
@@ -103,10 +108,10 @@
                     </div>
                 </div>
                 <div class="categorias__categoriaIndividual">
-                    <div class="categorias__titulo">
+                    <!--<div class="categorias__titulo">
                         <h1 class="categorias__nombre">Accesorios</h1>
-                        <a href="02_todosProductos.html"><h2 class="categorias__verTodo">Ver todo...</h2></a>
-                    </div>
+                        <h2 class="categorias__verTodo">Ver todo...</h2>
+                    </div>-->
                     <div class="categorias__tarjetas">
                         <div class="categorias__tarjeta">
                             <img src="" alt="" class="categorias__imagen categorias__imagen--accesorios">
@@ -147,10 +152,10 @@
                     </div>
                 </div>
                 <div class="categorias__categoriaIndividual">
-                    <div class="categorias__titulo">
+                    <!--<div class="categorias__titulo">
                         <h1 class="categorias__nombre">Medicamentos</h1>
-                        <a href="02_todosProductos.html"><h2 class="categorias__verTodo">Ver todo...</h2></a>
-                    </div>
+                        <h2 class="categorias__verTodo">Ver todo...</h2>
+                    </div>-->
                     <div class="categorias__tarjetas">
                         <div class="categorias__tarjeta">
                             <img src="" alt="" class="categorias__imagen categorias__imagen--medicamentos">
@@ -191,10 +196,10 @@
                     </div>
                 </div>
                 <div class="categorias__categoriaIndividual">
-                    <div class="categorias__titulo">
+                    <!--<div class="categorias__titulo">
                         <h1 class="categorias__nombre">Aseo</h1>
-                        <a href="02_todosProductos.html"><h2 class="categorias__verTodo">Ver todo...</h2></a>
-                    </div>
+                        <h2 class="categorias__verTodo">Ver todo...</h2>
+                    </div>-->
                     <div class="categorias__tarjetas">
                         <div class="categorias__tarjeta">
                             <img src="" alt="" class="categorias__imagen categorias__imagen--aseo">
@@ -289,30 +294,3 @@
             <p class="footer__elaboradoPor">2023</p>
         </footer>
     </body>
-
-    <script>
-        /* /////////////////// FUNCIONES ////////////// */
-        function activarDesactivarMenuNavegacion() {
-                if (estadoNavegacion == "none"){
-                    document.getElementById("head__navegacion--id").style.display = "flex";
-                    document.getElementById("head__ID").style.height = "255px";
-                    estadoNavegacion = "flex";
-                }
-                else{
-                    document.getElementById("head__navegacion--id").style.display = "none";
-                    document.getElementById("head__ID").style.height = "70px";
-                    estadoNavegacion = "none";
-                }
-        }
-
-        /* /////////////////// CUERPO DEL ALGORITMO ////////////////// */
-
-        var botonNavegacion = document.querySelector(".head__buttonNav");
-        var opcionesNavegacion = document.querySelector(".head__navegacion");
-        var estadoNavegacion = document.getElementById("head__navegacion--id").style.display;
-
-        botonNavegacion.onclick = activarDesactivarMenuNavegacion;
-
-    </script>
-
-</html>

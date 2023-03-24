@@ -181,3 +181,9 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 1400px){
+    .header{
+        right: calc(100vw - 1400px);
+    }
+}
