@@ -53,6 +53,25 @@
     align-self: end;
 }
 
+.categorias__tarjeta{
+    border-radius: 10px;
+    padding: 0.1rem;
+}
+
+.categorias__tarjeta--alimentos{
+    background: #F1D4FF;
+}
+.categorias__tarjeta--accesorios{
+    background: #6da187a1;
+}
+.categorias__tarjeta--medicamentos{
+    background: #dfedad6e;
+}
+.categorias__tarjeta--aseo{
+    background: #8d65a150;
+}
+
+
 .categorias__tarjetas{
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +88,7 @@
     background: #f1d4ffc1;
     width: 140px;
     height: 174px;
+    border-radius: 10px 10px 0 0;
 }
 .categorias__imagen--alimentos{
     background: #F1D4FF;
@@ -84,12 +104,19 @@
 }
 
 .categorias__producto{
-    color: #D8ADEE;
+    color: #8d65a1;
+    padding-left: 0.2rem;
 }
 
 .categorias__precio{
     color: #8D65A1;
     font-weight: 600;
+    padding-left: 0.2rem;
+}
+
+.categorias__verProducto{
+    padding-left: 0.2rem;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px){
