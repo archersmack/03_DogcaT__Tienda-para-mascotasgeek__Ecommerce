@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/05_sobreNosotros.css">
         <link rel="stylesheet" href="css/06_footer.css">
         <link rel="stylesheet" href="css/07_inicioSesion.css">
+        <link rel="stylesheet" href="css/09_inputs.css">
         <!-- FUENTES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,10 +51,16 @@
             <section class="inicioSesion CONTAINER">
                 <div class="inicioSesion__validacionUsuario">
                     <h1 class="inicioSesion__titulo">Inicia tu sesión</h1>
-                    <form action="" class="inicioSesion__formulario">
-                        <input type="text" class="inicioSesion__input" placeholder="Escriba su correo electrónico">
-                        <input type="text" class="inicioSesion__input" placeholder="Escriba su contraseña">
-                        <a href="03_menuAdministrador.html" class="inicioSesion__boton boton">Entrar</a>
+                    <form action="03_menuAdministrador.html" class="inicioSesion__formulario">
+                        <div class="inicioSesion__input__container">
+                            <input type="email" class="inicioSesion__input" placeholder="Escriba su correo electrónico" required data-tipoinput="email">
+                            <span class="inicioSesion__input__messageError input__messageError">Campo inválido</span>
+                        </div>
+                        <div class="inicioSesion__input__container">
+                            <input type="password" class="inicioSesion__input" placeholder="Escriba su contraseña" minlength="8" maxlength="12" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 8 caracteres, máximo 12, debe contener mínimo una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipoinput="contraseña">
+                            <span class="inicioSesion__input__messageError input__messageError">Campo inválido</span>
+                        </div>
+                        <button class="inicioSesion__boton boton">Entrar</button>
                     </form>
                 </div>
             </section>
@@ -89,16 +96,25 @@
                 <div class="sobreNosotros__contacto">
                     <h1 class="sobreNosotros__contacto__titulo">Hable con nosotros</h1>
                     <form action="" class="sobreNosotros__contacto__formulario">
-                        <label for="" class="sobreNosotros__contacto__label">Tu nombre</label>
-                        <input type="text" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto">
+                        <div class="sobreNosotros__input__container">
+                            <label for="" class="sobreNosotros__contacto__label">Tu nombre</label>
+                            <input type="text" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto" required minlength="3" maxlength="50" title="Debe contener mínimo 3 caracteres" data-tipoinput="nombre">
+                            <span class="sobreNosotros__input__messageError input__messageError">Campo inválido</span>
+                        </div>
                         
-                        <label for="" class="sobreNosotros__contacto__label">Tu correo</label>
-                        <input type="email" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto"><label for="" class="sobreNosotros__contacto__label">
+                        <div class="sobreNosotros__input__container">
+                            <label for="" class="sobreNosotros__contacto__label">Tu correo</label>
+                            <input type="email" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto" required data-tipoinput="email">
+                            <span class="sobreNosotros__input__messageError input__messageError">Campo inválido</span>
+                        </div>
 
-                        <label for="" class="sobreNosotros__contacto__label"></label>
-                        <textarea name="" id="" cols="30" rows="5" class="sobreNosotros__contacto__input" placeholder="Escribre tu mensaje" required spellcheck="true"></textarea>
+                        <div class="sobreNosotros__input__container">
+                            <label for="" class="sobreNosotros__contacto__label"></label>
+                            <textarea name="" id="" cols="30" rows="5" class="sobreNosotros__contacto__input" placeholder="Escribre tu mensaje" required spellcheck="true" minlength="1" title="Debe contener mínimo 1 caracter" data-tipoinput="mensaje"></textarea>
+                            <span class="sobreNosotros__input__messageError input__messageError">Campo inválido</span>
+                        </div>
                         
-                        <button class="sobreNosotros__contacto__button">Enviar mensaje</button>
+                        <button class="sobreNosotros__contacto__button boton">Enviar mensaje</button>
                     </form>
                 </div>                                                                                                          
             </section>
@@ -136,5 +152,7 @@
                 <!--<p class="footer__contador">Contador de Visitas</p>-->
             </div>
         </footer>
+
+        <script src="js/validaciones.js"></script>
     </body>
 </html>

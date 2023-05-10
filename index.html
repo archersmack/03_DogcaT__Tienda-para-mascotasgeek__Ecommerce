@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/04_categorias.css">
         <link rel="stylesheet" href="css/05_sobreNosotros.css">
         <link rel="stylesheet" href="css/06_footer.css">
+        <link rel="stylesheet" href="css/09_inputs.css">
         <!-- FUENTES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,13 +25,13 @@
     <body>
         <header class="header CONTAINER">
             <div class="header__logoNombre">
-                <img src="image/dogFace.png"Imagen Logo de la tienda de mascotas" class="header__logo">
+                <img src="image/dogFace.png" alt="Imagen Logo de la tienda de mascotas" class="header__logo">
                 <a href="#" class="header__nombre--link">
                     <h1 class="header__nombre">DogcaT</h1>
                 </a>
             </div>
             <div class="header__busqueda">
-                <input type="text" class="header__buscar" placeholder="Qué te recetó el Dogtor?">
+                <input type="search" class="header__buscar" placeholder="Qué te recetó el Dogtor?">
                <div class="header__lupa">
                     <span style="font-size: 1.3rem;color: white;text-align: right;">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -268,16 +269,25 @@
                 <div class="sobreNosotros__contacto">
                     <h1 class="sobreNosotros__contacto__titulo">Hable con nosotros</h1>
                     <form action="" class="sobreNosotros__contacto__formulario">
-                        <label for="" class="sobreNosotros__contacto__label">Tu nombre</label>
-                        <input type="text" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto">
+                        <div class="sobreNosotros__input__container">
+                            <label for="" class="sobreNosotros__contacto__label">Tu nombre</label>
+                            <input type="text" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto" required minlength="3" maxlength="50" title="Debe contener mínimo 3 caracteres" data-tipoinput="nombre">
+                            <span class="sobreNosotros__input__messageError input__messageError">Campo inválido</span>
+                        </div>
                         
-                        <label for="" class="sobreNosotros__contacto__label">Tu correo</label>
-                        <input type="email" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto"><label for="" class="sobreNosotros__contacto__label">
+                        <div class="sobreNosotros__input__container">
+                            <label for="" class="sobreNosotros__contacto__label">Tu correo</label>
+                            <input type="email" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto" required data-tipoinput="email">
+                            <span class="sobreNosotros__input__messageError input__messageError">Campo inválido</span>
+                        </div>
 
-                        <label for="" class="sobreNosotros__contacto__label"></label>
-                        <textarea name="" id="" cols="30" rows="5" class="sobreNosotros__contacto__input" placeholder="Escribre tu mensaje" required spellcheck="true"></textarea>
+                        <div class="sobreNosotros__input__container">
+                            <label for="" class="sobreNosotros__contacto__label"></label>
+                            <textarea name="" id="" cols="30" rows="5" class="sobreNosotros__contacto__input" placeholder="Escribre tu mensaje" required spellcheck="true" minlength="1" title="Debe contener mínimo 1 caracter" data-tipoinput="mensaje"></textarea>
+                            <span class="sobreNosotros__input__messageError input__messageError">Campo inválido</span>
+                        </div>
                         
-                        <button class="sobreNosotros__contacto__button">Enviar mensaje</button>
+                        <button class="sobreNosotros__contacto__button boton">Enviar mensaje</button>
                     </form>
                 </div>                                                                                                          
             </section>
@@ -290,19 +300,15 @@
                     <a href="#" class="footer__enlace">
                         <span style="font-size: 2rem;color: #ffffff;"><i class="fa-solid fa-house"></i></span>
                     </a>
-                    
                     <a href="https://www.linkedin.com/in/germ%C3%A1n-dario-hern%C3%A1ndez-leal-93a176206" class="footer__enlace">
                         <span style="font-size: 2rem;color: #ffffff;"><i class="fa-brands fa-linkedin" alt="Enlace a LinkedIn"></i></span>
                     </a>
-                    
                     <a href="https://github.com/archersmack" class="footer__enlace">
                         <span style="font-size: 2rem;color: #ffffff;"><i class="fa-brands fa-github" alt="Enalce a GitHub"></i></span>
                     </a>
-                    
                     <a href="https://germandariofotografia.pixieset.com/" class="footer__enlace">
                         <span style="font-size: 2rem;color: #ffffff;"><i class="fa-regular fa-image" alt="Enlace a la galeria"></i></span>
                     </a>
-
                     <a href="https://flic.kr/ps/wXjqG" class="footer__enlace">
                         <span style="font-size: 2rem;color: #ffffff;"><i class="fa-brands fa-flickr" alt="Enlace a Flickr"></i></span>
                     </a>
@@ -315,32 +321,8 @@
                 <!--<p class="footer__contador">Contador de Visitas</p>-->
             </div>
         </footer>
-
+        
+        <script src="js/validaciones.js"></script>
     </body>
-
-    <script>
-        /* /////////////////// FUNCIONES ////////////// */
-        function activarDesactivarMenuNavegacion() {
-                if (estadoNavegacion == "none"){
-                    document.getElementById("head__navegacion--id").style.display = "flex";
-                    document.getElementById("head__ID").style.height = "255px";
-                    estadoNavegacion = "flex";
-                }
-                else{
-                    document.getElementById("head__navegacion--id").style.display = "none";
-                    document.getElementById("head__ID").style.height = "70px";
-                    estadoNavegacion = "none";
-                }
-        }
-
-        /* /////////////////// CUERPO DEL ALGORITMO ////////////////// */
-
-        var botonNavegacion = document.querySelector(".head__buttonNav");
-        var opcionesNavegacion = document.querySelector(".head__navegacion");
-        var estadoNavegacion = document.getElementById("head__navegacion--id").style.display;
-
-        botonNavegacion.onclick = activarDesactivarMenuNavegacion;
-
-    </script>
 
 </html>

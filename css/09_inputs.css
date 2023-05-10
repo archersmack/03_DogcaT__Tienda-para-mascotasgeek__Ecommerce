@@ -1,0 +1,106 @@
+
+/*---------- inputs de la seccion SOBRE NOSOTROS ----------*/
+.sobreNosotros__input__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobreNosotros__contacto__label{
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.sobreNosotros__contacto__input--alto{
+    margin-top: 0.3rem;;
+    height: 25px;
+}
+
+.sobreNosotros__contacto__input{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    width: 100%;
+    color:#6DA187;
+}
+
+.sobreNosotros__contacto__input:focus{
+    color:#6DA187;
+    outline: none;
+}
+
+.sobreNosotros__contacto__input::placeholder{
+    color:#6DA187;
+}
+
+.sobreNosotros__input__messageError{
+    width: 100%;
+}
+
+
+/*---------- inputs de la seccion inicioSesion de la pagina LOGIN ----------*/
+
+.inicioSesion__input__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioSesion__input{
+    width: 240px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+    border: none;
+    color: #D8ADEE;
+}
+
+.inicioSesion__input:focus{
+    color:#D8ADEE;
+    outline: none;
+}
+
+.inicioSesion__input::placeholder{
+    color:#D8ADEE;
+}
+
+.inicioSesion__input__messageError{
+    width: 240px;
+}
+
+
+/*------- OPCION VALIDADOR CUALQUIER INPUT, se agrega desde validaciones.js -------*/
+
+.input--validity{
+    color: red;
+    background: #fbf4a4;
+}
+
+.input__messageError{
+    display: none;
+}
+
+.input__container--invalid .input__messageError{
+    display: block;
+    padding: 1px 2px;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /*background: #c7549e;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.77rem;
+    color: #fbf4a4;
+}
+
+@media screen and (min-width: 1024px){
+    .inicioSesion__input{
+        width: 430px;
+        padding: 0.25rem 0.5rem;
+    }
+    .inicioSesion__input__messageError{
+        width: 430px;
+    }
+    .input__container--invalid .input__messageError{
+        padding: 0.25rem 0.5rem;
+    }
+}

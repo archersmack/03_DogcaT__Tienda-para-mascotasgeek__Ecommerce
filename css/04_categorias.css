@@ -78,7 +78,6 @@
     transform: scale(1.075);
 }
 
-
 .categorias__tarjetas{
     display: flex;
     flex-wrap: wrap;

@@ -31,24 +31,6 @@
     gap: 1.2rem;
 }
 
-.inicioSesion__input{
-    width: 240px;
-    height: 30px;
-    font-family: 'Montserrat', sans-serif;
-
-    border: none;
-    color: #D8ADEE;
-}
-
-.inicioSesion__input:focus{
-    color:#D8ADEE;
-    outline: none;
-}
-
-.inicioSesion__input::placeholder{
-    color:#D8ADEE;
-}
-
 .inicioSesion__boton{
     background: #D8ADEE;
     text-decoration: none;
@@ -58,10 +40,6 @@
 @media screen and (min-width: 1024px){
     .inicioSesion__titulo{
         margin-bottom: 1.9rem;
-    }
-    .inicioSesion__input{
-        width: 430px;
-        padding: 0.25rem 0.5rem;
     }
     .inicioSesion__boton{
         width: 450px;
