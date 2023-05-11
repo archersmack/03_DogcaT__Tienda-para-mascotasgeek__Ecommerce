@@ -24,6 +24,54 @@
     gap: 1rem;
 }
 
+.agregarProducto__agregarImagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.agregarProducto__arrastrarYsoltar{
+    height: 100px;
+    background: #f8fbef;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 1rem;
+
+    color: #90a155;
+    font-size: 0.7rem;
+    text-align: center;
+
+    border: solid 2.5px #90a155;
+    border-style: dashed;
+}
+
+.fa-solid--BuscarImagen{
+    font-size: 3rem;
+}
+
+.agregrarProducto__imagenArrastrarYsoltar{
+
+}
+
+.agregarProducto__o{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #788743;
+}
+
+.agregarProducto__btnAddImage{
+    width: 35%;
+    background: #90a155;
+    color: #dfedad;
+}
+
 .agregarProducto__campoIndividual{
     display: flex;
     flex-direction: column;

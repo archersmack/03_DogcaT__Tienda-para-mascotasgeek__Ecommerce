@@ -12,16 +12,25 @@ function validarInput(eventoBlur){
 
         switch (tipoDeInputValidacion) {
             case "email":
-                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo  EMAIL no es válido o está incompleto. <br> El formato es: email@dominio.com";
+                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo EMAIL no es válido o está incompleto.<br> El formato es: email@dominio.com";
                 break;
             case "contraseña":
-                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo  CONTRASEÑA no es válido o está incompleto. <br> Debe tener entre 8 y 15 caracteres, debe tener mínimo una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.";
+                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo CONTRASEÑA no es válido o está incompleto.<br> Debe tener entre 8 y 15 caracteres, debe tener mínimo una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.";
                 break;
             case "nombre":
-                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo  NOMBRE no es válido o está incompleto. <br> Debe contener mínimo 3 caracteres.";
+                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo NOMBRE no es válido o está incompleto.<br> Debe contener mínimo 3 caracteres.";
                 break;
             case "mensaje":
-                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo  MENSAJE no es válido o está incompleto. <br> Debe contener mínimo 1 caracter y máximo 120.";
+                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo MENSAJE no es válido o está incompleto.<br> Debe contener mínimo 1 caracter y máximo 120.";
+                break;
+            case "precio":
+                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo PRECIO está incompleto.<br> Debe contener mínimo 3 números.";
+                break;
+            case "descripción":
+                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo DESCRIPCION no es válido o está incompleto.<br> Debe contener mínimo 3 caracteres y máximo 150.";
+                break;
+            case "categoria":
+                eventoBlur.parentElement.querySelector(".input__messageError").innerHTML = "El campo CATEGORIA no es válido o está incompleto.<br> Debe contener mínimo 3 caracteres y máximo 20.";
                 break;
         };
     };
@@ -43,6 +52,7 @@ inputs.forEach( (cadaInput) => {                                // Ahora se recc
 // =============== Autenticación de usuario ===============
 
 const botonValidUser = document.querySelector("[data-botonValidarUsuario]");
+console.log(botonValidUser);
 
 botonValidUser.addEventListener("click", (evento) => {
     evento.preventDefault();
@@ -55,7 +65,9 @@ botonValidUser.addEventListener("click", (evento) => {
         window.location.href = "../links/03_menuAdministrador.html";
     }else{
         alert("EL usuario o contraseña está errado.");
-        //window.location.href = "../links/03_menuAdministrador.html";
+        //window.location.href = "pagina html con mensaje de error (falta diseñar)";
     }
-    
 });
+
+// =============== Arrastrar y soltar imagen ===============
+

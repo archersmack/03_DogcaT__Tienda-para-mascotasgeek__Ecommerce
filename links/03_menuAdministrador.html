@@ -49,35 +49,40 @@
                 </span>
             </button>
         </header>
+
         <main>
             <section class="agregarProducto CONTAINER">
                 <div class="agregarProducto__nuevoProducto">
                     <h1 class="agregarProducto__titulo">Agregar nuevo producto</h1>
                     <form action="" class="agregarProducto__formulario">
-                        <div class="agregarProducto__campoIndividual">
-                            <label for="" class="agregarProducto__label">URL de la imagen</label>
-                            <input type="text" class="agregarProducto__input">
-                        </div>                        
-                        <div class="agregarProducto__campoIndividual">
-                            <label for="" class="agregarProducto__label">Categoría</label>
-                            <input type="text" class="agregarProducto__input">
+                        <div class="agregarProducto__agregarImagen">
+                            <div class="agregarProducto__arrastrarYsoltar">
+                                <i class="fa-solid fa-image fa-solid--BuscarImagen"></i>
+                                <p class="agregarProducto__textoAddImage">Arrastre para agregar una imágen al producto</p>
+                            </div>
+                            <p class="agregarProducto__o">o</p>
+                            <button class="agregarProducto__btnAddImage boton">Buscar imagen</button>
                         </div>                        
                         <div class="agregarProducto__campoIndividual">
                             <label for="" class="agregarProducto__label">Nombre del producto</label>
-                            <input type="text" class="agregarProducto__input">
+                            <input type="text" class="agregarProducto__input" minlength="3" maxlength="20" required data-tipoinput="nombre">
                         </div>                        
                         <div class="agregarProducto__campoIndividual">
                             <label for="" class="agregarProducto__label">Precio del producto</label>
-                            <input type="text" class="agregarProducto__input">
+                            <input type="number" class="agregarProducto__input" required minlength="3" data-tipoinput="precio">
                         </div>
                         <div class="agregarProducto__campoIndividual">
                             <label for="" class="agregarProducto__label">Descripción del producto</label>
-                            <input type="text" class="agregarProducto__input agregarProducto__input--descripcion">
+                            <input type="text" class="agregarProducto__input agregarProducto__input--descripcion" required minlength="3" maxlength="150" data-tipoinput="descripción">
                         </div>
                         <div class="agregarProducto__campoIndividual">
+                            <label for="" class="agregarProducto__label">Categoría</label>
+                            <input type="text" class="agregarProducto__input" required minlength="3" maxlength="20" data-tipoinput="categoria">
+                        </div> 
+                        <!-- <div class="agregarProducto__campoIndividual">
                             <label for="" class="agregarProducto__label">Fecha de Ingreso</label>
                             <input type="date" class="agregarProducto__input agregarProducto__input--descripcion">
-                        </div>
+                        </div> -->
                         <button class="agregarProducto__boton boton">Agregar producto</button>
                     </form>
                 </div>
