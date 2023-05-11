@@ -42,7 +42,7 @@
                 <a href="#" class="header__link">Para perros</a>
                 <a href="#" class="header__link">Para gatos</a>
             </nav>
-            <a href="01_login.html" class="header__botonSesion">Sesión del Veterinario</a>
+            <a href="./links/01_login.html" class="header__botonSesion">Sesión del Veterinario</a>
             <button class="head__buttonNav">
                 <span style="font-size: 1.8rem;color: white;text-align: right;">
                     <i class="fa-solid fa-bars"></i>
@@ -54,7 +54,7 @@
                 <div class="banner__imagenes">
                     <h1 class="banner__titulo">Accesorios en Promoción</h1>
                     <h2 class="banner__subtitulo">Productos seleccionados con 33% de descuento</h2>
-                    <a href="#" class="banner__boton">Ver Accesorios</a>
+                    <a href="#irSeccionAccesorios" class="banner__boton">Ver Accesorios</a>
                 </div>
             </section>
 
@@ -62,14 +62,14 @@
                 <div class="categorias__categoriaIndividual">
                     <div class="categorias__titulo">
                         <h1 class="categorias__nombre">Alimentos</h1>
-                        <a href="02_todosProductos.html" class="categorias__verTodo">Ver todo...</a>
+                        <a href="./links/02_todosProductos.html" class="categorias__verTodo">Ver todo...</a>
                     </div>
                     <div class="categorias__tarjetas">
                         <div class="categorias__tarjeta categorias__tarjeta--alimentos">
                             <img src="image/01_79316_201321_Besties___Alimento_Perros_Adultos_Sabor_Carne_y_Pollo_1666816171_800x800.avif" alt="Alimento 1" class="categorias__imagen">
                             <p class="categorias__producto">Producto</p>
                             <p class="categorias__precio">$ 10.000</p>
-                            <a href="" class="categorias__verProducto">Ver producto</a>
+                            <a href="" class="categorias__verProducto" id="irSeccionAccesorios">Ver producto</a>
                         </div>
                         <div class="categorias__tarjeta categorias__tarjeta--alimentos">
                             <img src="image/02_7703616001531.webp" alt="Alimento 2" class="categorias__imagen">
@@ -105,8 +105,8 @@
                 </div>
                 <div class="categorias__categoriaIndividual">
                     <div class="categorias__titulo">
-                        <h1 class="categorias__nombre">Accesorios</h1>
-                        <a href="02_todosProductos.html" class="categorias__verTodo">Ver todo...</a>
+                        <h1 class="categorias__nombre" >Accesorios</h1>
+                        <a href="./links/02_todosProductos.html" class="categorias__verTodo">Ver todo...</a>
                     </div>
                     <div class="categorias__tarjetas">
                         <div class="categorias__tarjeta categorias__tarjeta--accesorios">
@@ -150,7 +150,7 @@
                 <div class="categorias__categoriaIndividual">
                     <div class="categorias__titulo">
                         <h1 class="categorias__nombre">Medicamentos</h1>
-                        <a href="02_todosProductos.html" class="categorias__verTodo">Ver todo...</a>
+                        <a href="./links/02_todosProductos.html" class="categorias__verTodo">Ver todo...</a>
                     </div>
                     <div class="categorias__tarjetas">
                         <div class="categorias__tarjeta categorias__tarjeta--medicamentos">
@@ -194,7 +194,7 @@
                 <div class="categorias__categoriaIndividual">
                     <div class="categorias__titulo">
                         <h1 class="categorias__nombre">Aseo</h1>
-                        <a href="02_todosProductos.html" class="categorias__verTodo">Ver todo...</a>
+                        <a href="./links/02_todosProductos.html" class="categorias__verTodo">Ver todo...</a>
                     </div>
                     <div class="categorias__tarjetas">
                         <div class="categorias__tarjeta categorias__tarjeta--aseo">
@@ -277,13 +277,13 @@
                         
                         <div class="sobreNosotros__input__container">
                             <label for="" class="sobreNosotros__contacto__label">Tu correo</label>
-                            <input type="email" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto" required data-tipoinput="email">
+                            <input type="email" class="sobreNosotros__contacto__input sobreNosotros__contacto__input--alto" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" data-tipoinput="email">
                             <span class="sobreNosotros__input__messageError input__messageError">Campo inválido</span>
                         </div>
 
                         <div class="sobreNosotros__input__container">
                             <label for="" class="sobreNosotros__contacto__label"></label>
-                            <textarea name="" id="" cols="30" rows="5" class="sobreNosotros__contacto__input" placeholder="Escribre tu mensaje" required spellcheck="true" minlength="1" title="Debe contener mínimo 1 caracter" data-tipoinput="mensaje"></textarea>
+                            <textarea name="" id="" cols="30" rows="5" class="sobreNosotros__contacto__input" placeholder="Escribre tu mensaje" required spellcheck="true" minlength="1" maxlength="120" title="Debe contener mínimo 1 caracter" data-tipoinput="mensaje"></textarea>
                             <span class="sobreNosotros__input__messageError input__messageError">Campo inválido</span>
                         </div>
                         
